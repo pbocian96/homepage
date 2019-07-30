@@ -9,60 +9,38 @@
     href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
     rel="stylesheet"/>
     <title>Piotr Bocian</title>
-    <script type="text/javascript">
-    function name(){
-        document.getElementById("name").innerHTML="<h1>Piotr Bocian</h1>";
-        document.getElementById("aboutme").outerHTML="<div class=\"little-frame\" id=\"aboutme\" onclick=\"aboutMe();\">O mnie</div>";
-        document.getElementById("contact").outerHTML="<div class=\"little-frame\" id=\"contact\" onclick=\"contact();\">Kontakt</div>";
-    }
-    </script>
-    <script type="text/javascript">
-    function aboutMe(){
-        document.getElementById("name").innerHTML = "<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste voluptates repudiandae itaque voluptas enim ab, delectus debitis libero animi cumque iure? Libero odio nam officiis accusantium pariatur sed quaerat. Numquam animi rem dignissimos excepturi cumque, a quam consequatur ipsum consectetur inventore assumenda.</p>";
-        document.getElementById("aboutme").outerHTML ="<div class=\"little-frame\" id=\"aboutme\" onclick=\"name();\">O mnie</div>";
-        document.getElementById("contact").outerHTML="<div class=\"little-frame\" id=\"contact\" onclick=\"contact();\">Kontakt</div>";
-    } 
-    </script>
-
-    <script type="text/javascript">
-    function contact(){
-        document.getElementById("name").innerHTML = "<h2>511-163-812<br/>piotr.bocian.96@gmail.com</h2>";
-        document.getElementById("contact").outerHTML ="<div class=\"little-frame\" id=\"contact\" onclick=\"name();\">Kontakt</div>";
-        document.getElementById("aboutme").outerHTML="<div class=\"little-frame\" id=\"aboutme\" onclick=\"aboutMe();\">O mnie</div>";
-    }
-    </script>
 </head>
 <body>
     <div id="container">
-        <div id="biggest">
-            <div id="frame">
-                <div id="name"><h1>Piotr Bocian</h1></div>
+        <div id="little-container">
+            <div id="biggest">
+                <div id="frame">
+                    <div id="name"><h1>Piotr Bocian</h1></div>
+                </div>
             </div>
-        </div>
-        <div id="blocks">
-            <div class="little-frame" id="aboutme" onclick="aboutMe();">O mnie</div>
-            <div class="line"></div>
-            <div class="little-frame" id="contact" onclick="contact();">Kontakt</div>
-        </div>
-        <div id="nav">
-            <div class="nav-item" id="fb"><a
-                href="https://www.facebook.com/piotrek.bocian1"
-                target="blank"
-                class="fab fa-facebook-f"
-              ></a></div>
+            <div id="blocks">
+                <div class="little-frame" id="aboutme" onclick="aboutMe();">O mnie</div>
+                <div class="line"></div>
+                <div class="little-frame" id="contact" onclick="contact();">Kontakt</div>
+            </div>
+            <div id="nav">
+                <div class="nav-item" id="fb"><a
+                    href="https://www.facebook.com/piotrek.bocian1"
+                    target="blank"
+                ><i class="fab fa-facebook-f" aria-hidden="true"></i></a></div>
 
-            <div class="nav-item" id="lk"><a
-                href="https://www.linkedin.com/in/piotr-bocian-a96679172/"
-                target="blank"
-                class="fab fa-linkedin-in"
-              ></a></div>
+                <div class="nav-item" id="lk"><a
+                    href="https://www.linkedin.com/in/piotr-bocian-a96679172/"
+                    target="blank"
+                ><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></div>
 
-            <div class="nav-item" id="git"><a
-                href="https://github.com/pbocian96"
-                target="blank"
-                class="fab fa-github"
-              ></a></div>
-        </div>
+                <div class="nav-item" id="git"><a
+                    href="https://github.com/pbocian96"
+                    target="blank"
+                ><i class="fab fa-github" aria-hidden="true"></i></a></div>
+            </div>
+    </div>
     </div>
 </body>
+<script src="js/main.js"></script>
 </html>
