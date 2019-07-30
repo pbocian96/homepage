@@ -1,7 +1,9 @@
 body {
     overflow: hidden;
     background-image: url(background4.jpg);
-    background-size: 1500px;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
     color: white;
     font-family: "Century Gothic", sans-serif;
     font-size:1em;
@@ -199,6 +201,9 @@ a {
 }
 
 @media (max-width: 700px){
+  body{
+    background-size: 1200px;
+  }
   #little-container{
     width:97%;
     height:100%;

@@ -11,7 +11,7 @@ function aboutMe(){
 } 
 
 function contact(){
-    document.getElementById("name").innerHTML = "<h2><i class=\"fa fa-phone\" aria-hidden=\"true\"></i>  511-163-812<br/><br/><i class=\"fa fa-envelope\" aria-hidden=\"true\"></i>  piotr.bocian.96@gmail.com</h2>";
+    document.getElementById("name").innerHTML = "511-163-812<br/><br/>piotr.bocian.96@gmail.com</h2>";
     document.getElementById("contact").outerHTML ="<div class=\"little-frame\" id=\"contact\" onclick=\"name();\">Kontakt</div>";
     document.getElementById("aboutme").outerHTML="<div class=\"little-frame\" id=\"aboutme\" onclick=\"aboutMe();\">O mnie</div>";
 }
