@@ -1,13 +1,10 @@
 body {
-    overflow: hidden;
     background-image: url(background4.jpg);
-    background-size: 100%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
+    overflow: hidden;
     color: white;
     font-family: "Century Gothic", sans-serif;
-    font-size:1em;
-    cursor: default;
 }
 
 
@@ -50,8 +47,7 @@ body {
       height: 100%;
       box-sizing: border-box;
       overflow: hidden;
-      background-color: rgba(100,100,100,0.2);
-      border-radius: 4px;
+      background-color: rgba(100,100,100,0.5);
       padding: 2vh 4vw 2vh 4vw;
   }
     #name {
@@ -62,7 +58,7 @@ body {
       #name p{
         animation: appear2 1s both;
       }
-      #name h2{
+      #name h3{
         animation: appear2 1s both;
       }
       #name h1{
@@ -85,11 +81,10 @@ body {
     justify-content: center;
     align-items: center;
     border: white solid 2px;
-    border-radius: 4px;
     width: 25vw;
     height: 49%;
     transition: 0.2s ease-in-out;
-    background-color: rgba(100,100,100,0.2);
+    background-color: rgba(100,100,100,0.4);
   }
   .little-frame i {
       font-size: 2em;
@@ -113,19 +108,20 @@ body {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    font-size: 8vh;
+    font-size: 8vmin;
 }
-
+/*width: 80%;
+height: 24%;*/
   .nav-item {
       border: solid 3px white;
-      width: 80%;
-      height: 24%;
+      width: 15vmin;
+      height: 15vmin;
       margin: 1.5vh 1.5vh 1.5vh 1.5vh;
       display: flex;
       align-items: center;
       justify-content: center;
       box-sizing: border-box;
-      transition: 0.2s ease-in-out;
+      transition: .15s ease-in-out;
     }
 
       #fb{
@@ -172,22 +168,17 @@ a {
   }
   100%{
     opacity: 1;
-    margin-top:1.5vh
+    margin-top:0;
   }
 }
 
-
-
-/*hovery*/
-
 .nav-item:hover{
-      transform: scale(1.05);
-      
+      transform: scale(1.03);
   }
 
 .little-frame:hover{
     transform: scale(1.02);
-    background-color: rgba(100,100,100,0.5);
+    background-color: rgba(100,100,100,0.7);
   }
 #fb:hover{
     background-color: rgba(59,89,152,1);
@@ -199,6 +190,8 @@ a {
 #git:hover{
     background-color: rgba(36,41,46,1);
 }
+
+/*Responsywność*/
 
 @media (max-width: 700px){
   body{
@@ -225,88 +218,42 @@ a {
     margin: 0 0 0 0;
   }
     .little-frame{
-      width: 40%;
-      height: 50%;
+      width: 47%;
+      height: 60%;
     }
     .line{
       display:none;
     }
   #nav{
     flex-direction: row;
+    flex-wrap: unset;
     justify-content: space-around;
     width: 90vw;
     height: 20vh;
     background-color: rgba(100,100,100,0.1);
-    border: 1px rgb(226, 223, 223) solid;
+
     border-radius: 6px;
     margin-top:0;
     margin-bottom:4vh;
   }
   .nav-item{
-    height:70%;
-    width:24%;
+    width: 19vmin;
+    height: 19vmin;
+    border-radius: 50%;
   }
 
 }
-@media (min-width: 600px){
+@media (min-width: 701px){
+  body{
+    background-size: 1200px;
+  }
   #nav{
     flex-direction: column;
   }
 }
 
-
-
-/*nieużywane kod
-
-  @keyframes shake{
-    0%{
-      transform:rotate(2deg);
-    }
-    30%{
-      transform:rotate(-4deg);
-    }
-    60%{
-      transform:rotate(8deg);
-    }
-    100%{
-      transform:rotate(-8deg)
-    }
-  }
-
-  @keyframes pulse{
-      0%{
-        filter: saturate(0);
-      }
-      30%{
-        filter: saturate(1);
-      }
-      50%{
-        filter: saturate(3);
-      }
-      70%{
-        filter: saturate(1);
-      }
-      0%{
-        filter: saturate(0);
-      }
-  }
-
-@media (max-width: 600px){
-  #container{
-    flex-direction: row;
-  }
-  #nav{
-    height: 25vh;
-    width:60vh;
-    flex-direction: row;
-
+@media (min-width:1200px){
+  body{
+    background-size: 100%;
   }
 }
-
-
-/*@media (min-width:600px){
-  #nav{
-    width: 25vh;
-    flex-direction: column;
-  }
-}*/
