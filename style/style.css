@@ -118,9 +118,6 @@ body {
     transition: 0.2s ease-in-out;
     background-color: rgba(0,0,0,0.4);
   }
-    .little-frame p{
-      font-size:2vmax;
-    }
 
 #nav {
     animation: appear1 2s 2s both;
